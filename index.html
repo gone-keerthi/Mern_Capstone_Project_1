@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles2.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner">
+        <div class="content-left">
+          <p>ROCK</p>
+          <p>PAPER</p>
+          <p>SCISSORS</p>
+        </div>
+        <div class="content-right">
+          <div class="computer-score-btn">
+              <h3>COMPUTER SCORE</h3> 
+              <p id="computer_score">0</p>
+          </div>
+          <div class="your-score-btn">
+              <h3>YOUR SCORE</h3>
+              <p id="your_score">0</p>
+          </div>
+      </div>
+      </div>
+      <main id="main">
+        <button class="btn-circle paper pick" data-choice="paper">
+          <img alt="paper" src="images/paper.png" />
+        </button>
+        <button class="btn-circle rock pick" data-choice="rock">
+          <img alt="rock" src="images/rock.png" />
+        </button>
+        <button class="btn-circle scissors pick" data-choice="scissors">
+          <img alt="scissors" src="images/scissors.png" />
+        </button>
+      </main>
+      <button id="rules-btn">RULES</button>
+      <div id="popup" class="popup">
+        <button id="remove-btn"><img alt="remove" src="X.png" /></button>
+        <h3>GAME RULES</h3>
+        <ul>
+          <li>
+            Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+          <li>
+            Agree ahead of time whether you’ll count off “rock, paper, scissors,
+            shoot” or just “rock, paper, scissors.”</li>
+          <li>
+            Use rock, paper, scissors to settle minor decisions or simply play
+            to pass the time</li>
+          <li>
+            If both players lay down the same hand, each player lays down
+            another hand </li>
+        </ul>
+      </div>
+      <div class="frame2" id="frame2">
+        <div class="left" id="user_selection">
+          <h4>YOU PICKED</h4>
+          <button class="btn-circle">
+            <img alt="paper" src="images/paper.png" />
+          </button>
+        </div>
+
+        <div class="center">
+          <h1><span id="winner_text"></span></h1>
+          <h3>AGANIST PC</h3>
+          <button class="play-again-btn" id="reset">
+              <span> PLAY AGAIN </span>
+          </button>
+        </div>
+
+        <div class="right" id="computer_selection">
+          <h4>PC PICKED</h4>
+          <button class="btn-circle">
+            <img alt="rock" src="images/rock.png" />
+          </button>
+        </div>
+      </div>
+      <div class="frame5">
+        <button class="nxt-btn">NEXT</button>
+        <div class="animation">
+          <
+        </div>
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
